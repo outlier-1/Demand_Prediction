@@ -1,4 +1,6 @@
-# pd.set_option('display.line_width', 5000)
-# pd.set_option('display.max_columns', 60)
-# fixed_df.plot()
-# plt.show(block=True)
+import matplotlib.pyplot as plt
+
+
+def plotSales(sales):
+    plt.plot(sales)
+    plt.show(block=True)

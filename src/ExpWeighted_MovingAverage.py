@@ -1,16 +1,16 @@
 import pandas as pd
 import numpy as np
 import math
-from src.utils import plotSales
 
 
-class LastPeriodPrediction:
-    def __init__(self, path):
+class ExpWeightedMovAverage:
+    def __init__(self, path, alpha):
         self.period = None
         self.prediction_array = []
         self.error_array = []
         self.mean_error = None
         self.df = self.read_csv_file(data_path=path)
+        self.alpha = alpha
 
     def read_csv_file(self, data_path):
         try:
@@ -23,10 +23,11 @@ class LastPeriodPrediction:
             print("File couldn't found.")
 
     def calculate_predicts(self):
-        self.prediction_array.append(0)
+        self.prediction_array.append(self.df[0][0])
         print("Calculating prediction values...")
         for item in range(1, self.period):
-            self.prediction_array.append(self.df[item - 1][0])
+            value = (self.df[item - 1][0] * self.alpha) + (self.prediction_array[item - 1] * (1 - self.alpha))
+            self.prediction_array.append(int(value))
         print("Done!")
         return self.prediction_array
 
@@ -42,7 +43,7 @@ class LastPeriodPrediction:
         return self.mean_error
 
 
-s = LastPeriodPrediction(path='sales.csv')
-a = s.calculate_predicts()
-s.calculate_errors()
-plotSales(a)
+ls = ExpWeightedMovAverage(path='sales.csv', alpha=0.7)
+print(ls.calculate_predicts())
+print(ls.calculate_errors())
+print(ls.error_array)
