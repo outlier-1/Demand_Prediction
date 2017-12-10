@@ -10,6 +10,6 @@ class AdaptiveEWMA(DemandPrediction):
         pass
 
 
-ls = AdaptiveEWMA(path='sales.csv', estimate_method='MAE', alpha=0.7)
+ls = AdaptiveEWMA(path='../sales.csv', estimate_method='MAE', alpha=0.7)
 print(ls.calculate_predicts())
 print(ls.estimate_predictions())

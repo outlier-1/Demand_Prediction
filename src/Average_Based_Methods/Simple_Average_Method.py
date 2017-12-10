@@ -16,6 +16,6 @@ class SimpleAverageMethod(DemandPrediction):
         return self.prediction_array
 
 
-ls = SimpleAverageMethod(path="sales.csv", estimate_method='MAE')
+ls = SimpleAverageMethod(path="../sales.csv", estimate_method='MAE')
 print(ls.calculate_predicts())
 print(ls.estimate_predictions())

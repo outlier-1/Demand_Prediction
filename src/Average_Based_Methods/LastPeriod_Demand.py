@@ -14,4 +14,4 @@ class LastPeriod(DemandPrediction):
         return self.prediction_array
 
 
-s = LastPeriod(path='sales.csv', estimate_method='OPT')
+s = LastPeriod(path='../sales.csv', estimate_method='OPT')

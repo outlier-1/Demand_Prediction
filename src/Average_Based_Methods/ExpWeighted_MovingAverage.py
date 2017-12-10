@@ -20,6 +20,6 @@ class ExpWeightedMovAverage(DemandPrediction):
         return self.prediction_array
 
 
-ls = ExpWeightedMovAverage(path='sales.csv', estimate_method='MAE', alpha=0.7)
+ls = ExpWeightedMovAverage(path='../sales.csv', estimate_method='MAE', alpha=0.7)
 print(ls.calculate_predicts())
 print(ls.estimate_predictions())
