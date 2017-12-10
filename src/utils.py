@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
 
-def plotSales(sales):
+def plot_sales(sales):
     plt.plot(sales)
     plt.show(block=True)

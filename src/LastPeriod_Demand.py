@@ -1,48 +1,17 @@
-import pandas as pd
-import numpy as np
-import math
-from src.utils import plotSales
+from src.DemandPrediction import DemandPrediction
 
 
-class LastPeriodPrediction:
-    def __init__(self, path):
-        self.period = None
-        self.prediction_array = []
-        self.error_array = []
-        self.mean_error = None
-        self.df = self.read_csv_file(data_path=path)
+class LastPeriod(DemandPrediction):
+    def __init__(self, path, estimate_method):
+        DemandPrediction.__init__(self, path=path, estimate_method=estimate_method)
 
-    def read_csv_file(self, data_path):
-        try:
-            self.df = pd.read_csv(data_path, sep=';', encoding='latin1', parse_dates=['Period'], dayfirst=True,
-                                  index_col='Period')
-            self.df = np.asarray(self.df, dtype='int')
-            self.period = len(self.df)
-            return self.df
-        except FileNotFoundError:
-            print("File couldn't found.")
-
-    def calculate_predicts(self):
-        self.prediction_array.append(0)
+    def calculate_predictions(self):
         print("Calculating prediction values...")
+        self.prediction_array[0] = None
         for item in range(1, self.period):
-            self.prediction_array.append(self.df[item - 1][0])
+            self.prediction_array[item] = self.df[item - 1][0]
         print("Done!")
         return self.prediction_array
 
-    def calculate_errors(self):
-        # Calculate the error array first
-        self.error_array.append(0)
-        print("Calculating Errors..!")
-        for item in range(1, self.period):
-            self.error_array.append(int(math.fabs(self.prediction_array[item] - self.df[item][0])))
-        print("Done!")
-        # Then calculate the mean error and return that.
-        self.mean_error = np.sum(self.error_array) / (self.period - 1)
-        return self.mean_error
 
-
-s = LastPeriodPrediction(path='sales.csv')
-a = s.calculate_predicts()
-s.calculate_errors()
-plotSales(a)
+s = LastPeriod(path='sales.csv', estimate_method='OPT')
