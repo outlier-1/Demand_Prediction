@@ -12,8 +12,8 @@ class WeightedMovingAverage(DemandPrediction):
         for x in range(self.n):
             self.prediction_array[x] = None
         print("Calculating prediction values...")
-        for item in range(self.n, self.period):
-            cumulative = np.sum(np.multiply(self.weights, self.df[item - self.n: item]))
+        for item in range(self.n, self.period_length):
+            cumulative = np.sum(np.multiply(self.weights, self.sales.values[item - self.n: item]))
             self.prediction_array[item] = int(cumulative)
         print("Done!")
         return self.prediction_array

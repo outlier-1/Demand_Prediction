@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08fe9828-2253-433f-bca2-1f22c854f298" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Trend_Based_Methods/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Adaptive_EWMA.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/Adaptive_EWMA.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ExpWeighted_MovingAverage.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/ExpWeighted_MovingAverage.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/LastPeriod_Demand.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MovAverage_With_Weights.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/MovAverage_With_Weights.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Moving_Average_Method.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/Moving_Average_Method.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Simple_Average_Method.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/workspace.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Average_Based_Methods/ExpWeighted_MovingAverage.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/ExpWeighted_MovingAverage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Average_Based_Methods/MovAverage_With_Weights.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/MovAverage_With_Weights.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Average_Based_Methods/Moving_Average_Method.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/Moving_Average_Method.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py" afterPath="$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DemandPrediction.py" afterPath="$PROJECT_DIR$/src/DemandPrediction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +20,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="DemandPrediction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DemandPrediction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LastPeriod.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/workspace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,6 +80,7 @@
     <findStrings>
       <find>n</find>
       <find>estimate_</find>
+      <find>df</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -52,24 +100,26 @@
         <option value="$PROJECT_DIR$/src/Simple_Average_Method.py" />
         <option value="$PROJECT_DIR$/src/Moving_Average_Method.py" />
         <option value="$PROJECT_DIR$/src/ExpWeighted_MovingAverage.py" />
-        <option value="$PROJECT_DIR$/src/DemandPrediction.py" />
         <option value="$PROJECT_DIR$/src/utils.py" />
         <option value="$PROJECT_DIR$/src/Adaptive_EWMA.py" />
         <option value="$PROJECT_DIR$/src/Average_Based_Methods/__init__.py" />
-        <option value="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py" />
         <option value="$PROJECT_DIR$/src/Average_Based_Methods/Adaptive_EWMA.py" />
         <option value="$PROJECT_DIR$/src/Average_Based_Methods/ExpWeighted_MovingAverage.py" />
         <option value="$PROJECT_DIR$/src/Average_Based_Methods/MovAverage_With_Weights.py" />
         <option value="$PROJECT_DIR$/src/Average_Based_Methods/Moving_Average_Method.py" />
         <option value="$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py" />
+        <option value="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py" />
+        <option value="$PROJECT_DIR$/src/DemandPrediction.py" />
+        <option value="$PROJECT_DIR$/src/workspace.py" />
+        <option value="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="857" />
-    <option name="y" value="130" />
-    <option name="width" value="404" />
-    <option name="height" value="509" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -99,12 +149,6 @@
               <item name="DEMAND_PREDICTION" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DEMAND_PREDICTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DEMAND_PREDICTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Average_Based_Methods" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -133,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LastPeriod_Demand (1)">
+  <component name="RunManager" selected="Python.workspace">
     <configuration name="ExpWeighted_MovingAverage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,24 +207,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DEMAND_PREDICTION" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="MovAverage_With_Weights" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DEMAND_PREDICTION" />
-      <option name="SCRIPT_NAME" value="C:\Users\mirac\Desktop\Dev\DEMAND_PREDICTION\src\Average_Based_Methods\MovAverage_With_Weights.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\mirac\Desktop\Dev\DEMAND_PREDICTION\src\Average_Based_Methods\LastPeriod.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,7 +229,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Simple_Average_Method" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Simple_Average_Method (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Average_Based_Methods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DEMAND_PREDICTION" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="workspace" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -214,25 +258,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DEMAND_PREDICTION" />
-      <option name="SCRIPT_NAME" value="C:\Users\mirac\Desktop\Dev\DEMAND_PREDICTION\src\Average_Based_Methods\Simple_Average_Method.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/workspace.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Moving_Average_Method" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MovAverage_With_Weights" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Simple_Average_Method" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ExpWeighted_MovingAverage" />
-      <item index="4" class="java.lang.String" itemvalue="Python.LastPeriod_Demand (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ExpWeighted_MovingAverage" />
+      <item index="2" class="java.lang.String" itemvalue="Python.LastPeriod_Demand (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Simple_Average_Method (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.workspace" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.LastPeriod_Demand (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ExpWeighted_MovingAverage" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Moving_Average_Method" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Simple_Average_Method" />
-        <item index="4" class="java.lang.String" itemvalue="Python.MovAverage_With_Weights" />
+        <item index="0" class="java.lang.String" itemvalue="Python.workspace" />
+        <item index="1" class="java.lang.String" itemvalue="Python.LastPeriod_Demand (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Simple_Average_Method (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ExpWeighted_MovingAverage" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Moving_Average_Method" />
       </list>
     </recent_temporary>
   </component>
@@ -241,11 +285,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3197492" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -289,9 +334,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -307,7 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -327,11 +369,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -355,9 +399,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -373,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -393,11 +434,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -409,11 +452,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -426,51 +471,61 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataset_api.py" />
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my.csv" />
     <entry file="file://$PROJECT_DIR$/src/dataset_api.py" />
     <entry file="file://$PROJECT_DIR$/src/my.csv" />
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataset_api.py" />
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my.csv" />
-    <entry file="file://$PROJECT_DIR$/src/dataset_api.py" />
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my.csv" />
     <entry file="file://$PROJECT_DIR$/src/dataset_api.py" />
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my.csv" />
+    <entry file="file://$PROJECT_DIR$/src/dataset_api.py" />
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,18 +537,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DemandPrediction.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#741#1702#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/Adaptive_EWMA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -505,69 +562,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/Adaptive_EWMA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod_Demand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/Moving_Average_Method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/ExpWeighted_MovingAverage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="153">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/MovAverage_With_Weights.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="204">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/Moving_Average_Method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/ExpWeighted_MovingAverage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DemandPrediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/Simple_Average_Method.py">
+    <entry file="file://$PROJECT_DIR$/src/workspace.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Average_Based_Methods/LastPeriod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

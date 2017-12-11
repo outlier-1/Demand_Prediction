@@ -9,8 +9,8 @@ class SimpleAverageMethod(DemandPrediction):
         self.prediction_array[0] = None
         print("Calculating prediction values...")
         cumulative = 0
-        for item in range(1, self.period):
-            cumulative += self.df[item - 1][0]
+        for item in range(1, self.period_length):
+            cumulative += self.sales.values[item - 1]
             self.prediction_array[item] = int(cumulative/item)
         print("Done!")
         return self.prediction_array

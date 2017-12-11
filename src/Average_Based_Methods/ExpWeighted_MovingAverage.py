@@ -7,10 +7,10 @@ class ExpWeightedMovAverage(DemandPrediction):
         self.alpha = alpha
 
     def calculate_predicts(self):
-        self.prediction_array[0] = self.df[0][0]
+        self.prediction_array[0] = self.sales.values[0]
         print("Calculating prediction values...")
-        for item in range(1, self.period):
-            value = (self.df[item - 1][0] * self.alpha) + (self.prediction_array[item - 1] * (1 - self.alpha))
+        for item in range(1, self.period_length):
+            value = (self.sales.values[item - 1] * self.alpha) + (self.prediction_array[item - 1] * (1 - self.alpha))
             self.prediction_array[item] = int(value)
 
         # Change first item to correct calculation of estimate

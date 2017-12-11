@@ -12,9 +12,9 @@ class MovingAverageMethod(DemandPrediction):
             self.prediction_array[x] = None
             cumulative += self.df[x][0]
         print("Calculating prediction values...")
-        for item in range(self.n, self.period):
+        for item in range(self.n, self.period_length):
             self.prediction_array[item] = int(cumulative/self.n)
-            cumulative = (cumulative+self.df[item][0]) - (self.df[item - self.n][0])
+            cumulative = (cumulative+self.sales.values[item]) - (self.sales.values[item - self.n][0])
         print("Done!")
         return self.prediction_array
 
